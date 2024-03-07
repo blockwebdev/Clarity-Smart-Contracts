@@ -1,0 +1,14 @@
+#V2
+tx-sender
+(contract-call? .counter get-count tx-sender)
+(contract-call? .counter count-up)
+(contract-call? .counter get-count tx-sender)
+::set_tx_sender ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5
+tx-sender
+(contract-call? .counter get-count tx-sender)
+(contract-call? `ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5.counter get-count tx-sender)
+(contract-call? 'ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5.counter get-count tx-sender)
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.counter get-count tx-sender)
+(contract-call? .counter count-up)
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.counter count-up)
+(contract-call? 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.counter get-count tx-sender)
